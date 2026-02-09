@@ -37,16 +37,17 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnQuanLiXe = new System.Windows.Forms.Button();
+            this.btnQuanLiTuyenXe = new System.Windows.Forms.Button();
+            this.btnTrangChu = new System.Windows.Forms.Button();
             this.pnlNoiDung = new System.Windows.Forms.Panel();
+            this.btnTramDung = new System.Windows.Forms.Button();
             this.pnlChucNang.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlChucNang
             // 
+            this.pnlChucNang.Controls.Add(this.btnTramDung);
             this.pnlChucNang.Controls.Add(this.label1);
             this.pnlChucNang.Controls.Add(this.button13);
             this.pnlChucNang.Controls.Add(this.button11);
@@ -55,10 +56,9 @@
             this.pnlChucNang.Controls.Add(this.button8);
             this.pnlChucNang.Controls.Add(this.button10);
             this.pnlChucNang.Controls.Add(this.button5);
-            this.pnlChucNang.Controls.Add(this.button6);
-            this.pnlChucNang.Controls.Add(this.button4);
-            this.pnlChucNang.Controls.Add(this.button2);
-            this.pnlChucNang.Controls.Add(this.button1);
+            this.pnlChucNang.Controls.Add(this.btnQuanLiXe);
+            this.pnlChucNang.Controls.Add(this.btnQuanLiTuyenXe);
+            this.pnlChucNang.Controls.Add(this.btnTrangChu);
             this.pnlChucNang.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlChucNang.Location = new System.Drawing.Point(0, 0);
             this.pnlChucNang.Name = "pnlChucNang";
@@ -206,77 +206,60 @@
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnQuanLiXe
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 244);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(300, 50);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "🚌 Quản lý Xe";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnQuanLiXe.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnQuanLiXe.FlatAppearance.BorderSize = 0;
+            this.btnQuanLiXe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnQuanLiXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLiXe.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLiXe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuanLiXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLiXe.Location = new System.Drawing.Point(0, 244);
+            this.btnQuanLiXe.Name = "btnQuanLiXe";
+            this.btnQuanLiXe.Size = new System.Drawing.Size(300, 50);
+            this.btnQuanLiXe.TabIndex = 4;
+            this.btnQuanLiXe.Text = "🚌 Quản lý Xe";
+            this.btnQuanLiXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLiXe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLiXe.UseVisualStyleBackColor = false;
+            this.btnQuanLiXe.Click += new System.EventHandler(this.btnQuanLiXe_Click);
             // 
-            // button4
+            // btnQuanLiTuyenXe
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 188);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(300, 50);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "🚏 Trạm dừng";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnQuanLiTuyenXe.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnQuanLiTuyenXe.FlatAppearance.BorderSize = 0;
+            this.btnQuanLiTuyenXe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnQuanLiTuyenXe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuanLiTuyenXe.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuanLiTuyenXe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuanLiTuyenXe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLiTuyenXe.Location = new System.Drawing.Point(0, 132);
+            this.btnQuanLiTuyenXe.Name = "btnQuanLiTuyenXe";
+            this.btnQuanLiTuyenXe.Size = new System.Drawing.Size(300, 50);
+            this.btnQuanLiTuyenXe.TabIndex = 1;
+            this.btnQuanLiTuyenXe.Text = "📍 Quản lý Tuyến xe";
+            this.btnQuanLiTuyenXe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnQuanLiTuyenXe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnQuanLiTuyenXe.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnTrangChu
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 132);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(300, 50);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "📍 Quản lý Tuyến xe";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 76);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Trang Chủ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnTrangChu.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 76);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(300, 50);
+            this.btnTrangChu.TabIndex = 0;
+            this.btnTrangChu.Text = "Trang Chủ";
+            this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTrangChu.UseVisualStyleBackColor = false;
             // 
             // pnlNoiDung
             // 
@@ -286,6 +269,25 @@
             this.pnlNoiDung.Size = new System.Drawing.Size(1172, 702);
             this.pnlNoiDung.TabIndex = 4;
             this.pnlNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNoiDung_Paint);
+            // 
+            // btnTramDung
+            // 
+            this.btnTramDung.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTramDung.FlatAppearance.BorderSize = 0;
+            this.btnTramDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnTramDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTramDung.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTramDung.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTramDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTramDung.Location = new System.Drawing.Point(0, 188);
+            this.btnTramDung.Name = "btnTramDung";
+            this.btnTramDung.Size = new System.Drawing.Size(300, 50);
+            this.btnTramDung.TabIndex = 14;
+            this.btnTramDung.Text = "🚏 Trạm dừng";
+            this.btnTramDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTramDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTramDung.UseVisualStyleBackColor = false;
+            this.btnTramDung.Click += new System.EventHandler(this.btnTramDung_Click);
             // 
             // frmChinh
             // 
@@ -307,11 +309,10 @@
 
         private System.Windows.Forms.Panel pnlChucNang;
         private System.Windows.Forms.Panel pnlNoiDung;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnQuanLiXe;
+        private System.Windows.Forms.Button btnQuanLiTuyenXe;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button10;
@@ -319,5 +320,6 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTramDung;
     }
 }

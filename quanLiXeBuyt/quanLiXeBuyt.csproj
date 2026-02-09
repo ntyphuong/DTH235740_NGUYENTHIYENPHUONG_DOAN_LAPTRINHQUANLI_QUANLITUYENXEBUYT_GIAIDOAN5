@@ -151,6 +151,24 @@
     <Compile Include="GiaoDien\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\ucQuanLyXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\ucQuanLyXe.Designer.cs">
+      <DependentUpon>ucQuanLyXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\ucTramDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\ucTramDung.Designer.cs">
+      <DependentUpon>ucTramDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\ucTuyenXe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\ucTuyenXe.Designer.cs">
+      <DependentUpon>ucTuyenXe.cs</DependentUpon>
+    </Compile>
     <Compile Include="NghiepVu\MaHoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\ucTramDung.resx">
+      <DependentUpon>ucTramDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

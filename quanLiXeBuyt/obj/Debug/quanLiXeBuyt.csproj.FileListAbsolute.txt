@@ -122,3 +122,4 @@ D:\CONG NGHE THONG TIN\Lập trình quản lý\Đồ án cá nhân\Giai đoạn 
 D:\CONG NGHE THONG TIN\Lập trình quản lý\Đồ án cá nhân\Giai đoạn 3\quanLiXeBuyt\obj\Debug\quanLiXe.A4DBFA09.Up2Date
 D:\CONG NGHE THONG TIN\Lập trình quản lý\Đồ án cá nhân\Giai đoạn 3\quanLiXeBuyt\obj\Debug\quanLiXeBuyt.exe
 D:\CONG NGHE THONG TIN\Lập trình quản lý\Đồ án cá nhân\Giai đoạn 3\quanLiXeBuyt\obj\Debug\quanLiXeBuyt.pdb
+D:\CONG NGHE THONG TIN\Lập trình quản lý\Đồ án cá nhân\Giai đoạn 3\quanLiXeBuyt\obj\Debug\quanLiXeBuyt.GiaoDien.ucTramDung.resources

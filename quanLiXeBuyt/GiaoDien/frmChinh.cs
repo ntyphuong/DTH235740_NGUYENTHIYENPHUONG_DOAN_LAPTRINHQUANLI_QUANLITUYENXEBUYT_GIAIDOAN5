@@ -67,7 +67,12 @@ namespace quanLiXeBuyt.GiaoDien
             }
             map.Overlays.Add(markersOverlay);
         }
-
+        private void HienThiNoiDung(UserControl uc)
+        {
+            pnlNoiDung.Controls.Clear(); 
+            uc.Dock = DockStyle.Fill;
+            pnlNoiDung.Controls.Add(uc);
+        }
 
 
 
@@ -79,6 +84,19 @@ namespace quanLiXeBuyt.GiaoDien
         private void pnlNoiDung_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnTramDung_Click(object sender, EventArgs e)
+        {
+            ucTramDung uc = new ucTramDung();
+            pnlNoiDung.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            pnlNoiDung.Controls.Add(uc);
+        }
+
+        private void btnQuanLiXe_Click(object sender, EventArgs e)
+        {
+            HienThiNoiDung(new ucQuanLyXe());
         }
     }
 }
