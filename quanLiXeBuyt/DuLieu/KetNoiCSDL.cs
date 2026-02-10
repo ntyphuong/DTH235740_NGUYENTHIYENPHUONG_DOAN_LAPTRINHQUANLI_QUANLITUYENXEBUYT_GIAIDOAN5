@@ -29,7 +29,6 @@ namespace quanLiXeBuyt.DuLieu
             using (MySqlConnection conn = LayKetNoi())
             {
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
-                // Dòng này giúp đưa danh sách tham số vào câu lệnh SQL
                 if (thamSo != null) cmd.Parameters.AddRange(thamSo);
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
@@ -38,7 +37,6 @@ namespace quanLiXeBuyt.DuLieu
             return dt;
         }
 
-        // Hàm thực thi (Thêm, Xóa, Sửa)
         public int ThucThi(string sql, MySqlParameter[] thamSo = null)
         {
             using (MySqlConnection conn = LayKetNoi())

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlChucNang = new System.Windows.Forms.Panel();
+            this.btnTramDung = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.btnQuanLiTuyenXe = new System.Windows.Forms.Button();
             this.btnTrangChu = new System.Windows.Forms.Button();
             this.pnlNoiDung = new System.Windows.Forms.Panel();
-            this.btnTramDung = new System.Windows.Forms.Button();
             this.pnlChucNang.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,25 @@
             this.pnlChucNang.Size = new System.Drawing.Size(307, 702);
             this.pnlChucNang.TabIndex = 3;
             this.pnlChucNang.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlChucNang_Paint);
+            // 
+            // btnTramDung
+            // 
+            this.btnTramDung.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnTramDung.FlatAppearance.BorderSize = 0;
+            this.btnTramDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnTramDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTramDung.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTramDung.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTramDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTramDung.Location = new System.Drawing.Point(0, 188);
+            this.btnTramDung.Name = "btnTramDung";
+            this.btnTramDung.Size = new System.Drawing.Size(300, 50);
+            this.btnTramDung.TabIndex = 14;
+            this.btnTramDung.Text = "🚏 Trạm dừng";
+            this.btnTramDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTramDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTramDung.UseVisualStyleBackColor = false;
+            this.btnTramDung.Click += new System.EventHandler(this.btnTramDung_Click);
             // 
             // label1
             // 
@@ -269,25 +288,6 @@
             this.pnlNoiDung.Size = new System.Drawing.Size(1172, 702);
             this.pnlNoiDung.TabIndex = 4;
             this.pnlNoiDung.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNoiDung_Paint);
-            // 
-            // btnTramDung
-            // 
-            this.btnTramDung.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnTramDung.FlatAppearance.BorderSize = 0;
-            this.btnTramDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnTramDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTramDung.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTramDung.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTramDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTramDung.Location = new System.Drawing.Point(0, 188);
-            this.btnTramDung.Name = "btnTramDung";
-            this.btnTramDung.Size = new System.Drawing.Size(300, 50);
-            this.btnTramDung.TabIndex = 14;
-            this.btnTramDung.Text = "🚏 Trạm dừng";
-            this.btnTramDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTramDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTramDung.UseVisualStyleBackColor = false;
-            this.btnTramDung.Click += new System.EventHandler(this.btnTramDung_Click);
             // 
             // frmChinh
             // 

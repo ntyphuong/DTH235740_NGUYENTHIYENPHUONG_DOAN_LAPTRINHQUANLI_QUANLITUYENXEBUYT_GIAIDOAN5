@@ -34,12 +34,10 @@ namespace quanLiXeBuyt.GiaoDien
 
         private void LoadData()
         {
-            // 1. Đổ dữ liệu vào bảng
             string sql = "SELECT * FROM Stops";
             DataTable dt = db.LayDuLieu(sql);
             dgvTramDung.DataSource = dt;
 
-            // 2. Đổ dữ liệu lên bản đồ
             markersOverlay.Markers.Clear();
             foreach (DataRow row in dt.Rows)
             {
@@ -59,15 +57,12 @@ namespace quanLiXeBuyt.GiaoDien
             {
                 DataGridViewRow row = dgvTramDung.Rows[e.RowIndex];
 
-                // Lấy StopID để dùng cho Sửa/Xóa
                 stopID_DangChon = Convert.ToInt32(row.Cells["StopID"].Value);
 
-                // Đổ dữ liệu lên TextBox để người dùng sửa
                 txtTenTram.Text = row.Cells["StopName"].Value.ToString();
                 txtViDo.Text = row.Cells["Latitude"].Value.ToString();
                 txtKinhDo.Text = row.Cells["Longitude"].Value.ToString();
 
-                // Bản đồ tự bay tới chỗ đó
                 double lat = Convert.ToDouble(row.Cells["Latitude"].Value);
                 double lng = Convert.ToDouble(row.Cells["Longitude"].Value);
                 mapTram.Position = new PointLatLng(lat, lng);
@@ -109,8 +104,8 @@ namespace quanLiXeBuyt.GiaoDien
                 if (db.ThucThi(sql, p) > 0)
                 {
                     MessageBox.Show("Xóa xong rồi!");
-                    LoadData(); // Load lại để ghim trên bản đồ biến mất
-                                // Xóa trắng các ô nhập liệu
+                    LoadData(); 
+                         
                     txtTenTram.Clear(); txtViDo.Clear(); txtKinhDo.Clear();
                     stopID_DangChon = -1;
                 }
@@ -128,16 +123,16 @@ namespace quanLiXeBuyt.GiaoDien
             string sql = "UPDATE Stops SET StopName = @name, Latitude = @lat, Longitude = @lng WHERE StopID = @id";
 
             MySqlParameter[] p = {
-        new MySqlParameter("@name", txtTenTram.Text),
-        new MySqlParameter("@lat", txtViDo.Text),
-        new MySqlParameter("@lng", txtKinhDo.Text),
-        new MySqlParameter("@id", stopID_DangChon)
-    };
+            new MySqlParameter("@name", txtTenTram.Text),
+            new MySqlParameter("@lat", txtViDo.Text),
+            new MySqlParameter("@lng", txtKinhDo.Text),
+            new MySqlParameter("@id", stopID_DangChon)
+        };
 
             if (db.ThucThi(sql, p) > 0)
             {
                 MessageBox.Show("Cập nhật trạm thành công rồi nè!");
-                LoadData(); // Load lại để bản đồ cập nhật ghim mới
+                LoadData(); 
             }
         }
     }

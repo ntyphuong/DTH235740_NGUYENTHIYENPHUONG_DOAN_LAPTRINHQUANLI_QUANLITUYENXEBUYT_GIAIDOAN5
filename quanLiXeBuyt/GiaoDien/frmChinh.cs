@@ -42,7 +42,6 @@ namespace quanLiXeBuyt.GiaoDien
         }
         private void HienThiTramDungLongXuyen()
         {
-            // Lấy đúng tên bảng 'Stops' trong Database của bạn
             string sql = "SELECT * FROM stops";
             DataTable dt = db.LayDuLieu(sql);
 
@@ -73,8 +72,20 @@ namespace quanLiXeBuyt.GiaoDien
             uc.Dock = DockStyle.Fill;
             pnlNoiDung.Controls.Add(uc);
         }
-
-
+        private void btnTramDung_Click(object sender, EventArgs e)
+        {
+            ucTramDung uc = new ucTramDung();
+            pnlNoiDung.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            pnlNoiDung.Controls.Add(uc);
+        }
+        private void btnQuanLiXe_Click(object sender, EventArgs e)
+        {
+            ucQuanLyXe uc = new ucQuanLyXe();
+            pnlNoiDung.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            pnlNoiDung.Controls.Add(uc);
+        }
 
         private void pnlChucNang_Paint(object sender, PaintEventArgs e)
         {
@@ -84,19 +95,6 @@ namespace quanLiXeBuyt.GiaoDien
         private void pnlNoiDung_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btnTramDung_Click(object sender, EventArgs e)
-        {
-            ucTramDung uc = new ucTramDung();
-            pnlNoiDung.Controls.Clear();
-            uc.Dock = DockStyle.Fill;
-            pnlNoiDung.Controls.Add(uc);
-        }
-
-        private void btnQuanLiXe_Click(object sender, EventArgs e)
-        {
-            HienThiNoiDung(new ucQuanLyXe());
         }
     }
 }

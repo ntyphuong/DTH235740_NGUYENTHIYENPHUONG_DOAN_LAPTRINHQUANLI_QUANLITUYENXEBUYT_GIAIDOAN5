@@ -178,6 +178,9 @@
     <EmbeddedResource Include="GiaoDien\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\ucQuanLyXe.resx">
+      <DependentUpon>ucQuanLyXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\ucTramDung.resx">
       <DependentUpon>ucTramDung.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +214,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\logoDangNhap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\Xe buýt_02.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
