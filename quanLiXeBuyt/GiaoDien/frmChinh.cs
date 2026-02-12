@@ -53,7 +53,6 @@ namespace quanLiXeBuyt.GiaoDien
                 double lng = Convert.ToDouble(row["Longitude"]);
                 string tenTram = row["StopName"].ToString();
 
-                // Tạo marker ghim màu đỏ
                 GMapMarker marker = new GMarkerGoogle(
                     new PointLatLng(lat, lng),
                     GMarkerGoogleType.red_pushpin
@@ -65,12 +64,6 @@ namespace quanLiXeBuyt.GiaoDien
                 markersOverlay.Markers.Add(marker);
             }
             map.Overlays.Add(markersOverlay);
-        }
-        private void HienThiNoiDung(UserControl uc)
-        {
-            pnlNoiDung.Controls.Clear(); 
-            uc.Dock = DockStyle.Fill;
-            pnlNoiDung.Controls.Add(uc);
         }
         private void btnTramDung_Click(object sender, EventArgs e)
         {
@@ -95,6 +88,12 @@ namespace quanLiXeBuyt.GiaoDien
         private void pnlNoiDung_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnTrangChu_Click(object sender, EventArgs e)
+        {
+            pnlNoiDung.Controls.Clear();
+            KhoiTaoBanDo();
         }
     }
 }

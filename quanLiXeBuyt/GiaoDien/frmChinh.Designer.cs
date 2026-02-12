@@ -279,6 +279,7 @@
             this.btnTrangChu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrangChu.UseVisualStyleBackColor = false;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnTrangChu_Click);
             // 
             // pnlNoiDung
             // 
